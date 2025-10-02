@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-g">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio One-Page com Bulma</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    /* Garante que os links da navbar rolem suavemente para as seções */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#inicio">
+          <strong class="is-size-4">Meu Portfólio</strong>
+        </a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#inicio">
+            Início
+          </a>
+          <a class="navbar-item" href="#sobre">
+            Sobre
+          </a>
+          <a class="navbar-item" href="#portfolio">
+            Portfólio
+          </a>
+          <a class="navbar-item" href="#contato">
+            Contato
+          </a>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary" href="https://github.com" target="_blank">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="inicio" class="hero is-primary is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title is-1">
+          Olá, eu sou Desenvolvedor(a) Web
+        </p>
+        <p class="subtitle is-3">
+          Especialista em criar soluções modernas e responsivas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">Sobre Mim</h1>
+      <h2 class="subtitle has-text-centered">Um pouco da minha jornada e habilidades</h2>
+      <div class="columns is-vcentered">
+        <div class="column is-half">
+          <figure class="image is-4by3">
+            <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Descrição da imagem">
+          </figure>
+        </div>
+        <div class="column is-half">
+          <div class="content is-medium">
+            <p>
+              Sou um(a) profissional apaixonado(a) por tecnologia e design, com experiência em desenvolvimento de aplicações web utilizando as mais recentes tecnologias do mercado. Meu foco é criar interfaces intuitivas, performáticas e acessíveis para todos os usuários.
+            </p>
+            <p>
+              Tenho conhecimento em HTML, CSS, JavaScript e frameworks modernos. Este portfólio foi construído com Bulma para demonstrar a agilidade e a elegância que este framework CSS pode oferecer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section has-background-light">
+    <div class="container">
+      <h1 class="title has-text-centered">Portfólio</h1>
+      <h2 class="subtitle has-text-centered">Alguns dos meus projetos recentes</h2>
+
+      <div class="columns is-multiline is-centered">
+        
+        <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-4">Projeto Um</p>
+              <p class="subtitle is-6">Tecnologias: HTML, CSS, Bulma</p>
+              <div class="content">
+                Uma breve descrição sobre o projeto, seus objetivos e os resultados alcançados.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Ver Site</a>
+              <a href="#" class="card-footer-item js-modal-trigger" data-target="modal-projeto-1">Detalhes</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-4">Projeto Dois</p>
+              <p class="subtitle is-6">Tecnologias: JavaScript, API</p>
+              <div class="content">
+                Uma breve descrição sobre o projeto, seus objetivos e os resultados alcançados.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Ver Site</a>
+              <a href="#" class="card-footer-item js-modal-trigger" data-target="modal-projeto-2">Detalhes</a>
+            </footer>
+          </div>
+        </div>
+
+        <div class="column is-full-mobile is-half-tablet is-one-third-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-4">Projeto Três</p>
+              <p class="subtitle is-6">Tecnologias: React, Bulma</p>
+              <div class="content">
+                Uma breve descrição sobre o projeto, seus objetivos e os resultados alcançados.
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Ver Site</a>
+              <a href="#" class="card-footer-item js-modal-trigger" data-target="modal-projeto-3">Detalhes</a>
+            </footer>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">Contato</h1>
+      <h2 class="subtitle has-text-centered">Vamos conversar!</h2>
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <form>
+            <div class="field">
+              <label class="label">Nome</label>
+              <div class="control has-icons-left">
+                <input class="input" type="text" placeholder="Seu nome completo" required>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-user"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left">
+                <input class="input" type="email" placeholder="seu.email@exemplo.com" required>
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Mensagem</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Digite sua mensagem aqui..." required></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped">
+              <div class="control">
+                <button class="button is-primary">Enviar</button>
+              </div>
+              <div class="control">
+                <button type="reset" class="button is-light">Limpar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Portfólio One-Page</strong> feito com <a href="https://bulma.io">Bulma</a>.
+        O código-fonte é licenciado <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+      </p>
+      <p>
+        &copy; 2025. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <div id="modal-projeto-1" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Detalhes do Projeto Um</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <p>Aqui vai uma descrição muito mais detalhada sobre o <strong>Projeto Um</strong>.</p>
+        <p>Pode incluir desafios técnicos, a solução implementada, tecnologias específicas e o impacto do projeto. Imagens, listas e outros elementos podem ser adicionados aqui.</p>
+      </section>
+      <footer class="modal-card-foot">
+        <div class="buttons">
+          <a class="button is-link" href="#">Visitar o Site</a>
+          <button class="button is-cancel">Fechar</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="modal-projeto-2" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Detalhes do Projeto Dois</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <p>Descrição detalhada sobre o <strong>Projeto Dois</strong>.</p>
+      </section>
+      <footer class="modal-card-foot">
+        <div class="buttons">
+          <button class="button is-cancel">Fechar</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div id="modal-projeto-3" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Detalhes do Projeto Três</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <p>Descrição detalhada sobre o <strong>Projeto Três</strong>.</p>
+      </section>
+      <footer class="modal-card-foot">
+        <div class="buttons">
+          <button class="button is-cancel">Fechar</button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script defer src="main.js"></script>
+</body>
+</html>
